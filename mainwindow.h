@@ -5,9 +5,9 @@
 #include <QMainWindow>
 
 //Include Sign-Up Pages
-#include "cosignuppage.h"
-#include "drsignuppage.h"
-#include "tcsignuppage.h"
+#include "co_signuppage.h"
+#include "dr_signuppage.h"
+#include "tc_signuppage.h"
 
 
 QT_BEGIN_NAMESPACE

@@ -1,5 +1,4 @@
-QT       += core gui
-QT += sql
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -7,35 +6,50 @@ CONFIG += c++17
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
-#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+# DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    cosignuppage.cpp \
+    co_dashboard.cpp \
+    co_signuppage.cpp \
     dbmanager.cpp \
-    drsignuppage.cpp \
+    dr_dashboard.cpp \
+    dr_signuppage.cpp \
     inputcheck.cpp \
     main.cpp \
     mainwindow.cpp \
-    tcsignuppage.cpp
+    tc_dashboard.cpp \
+    tc_signuppage.cpp
 
 HEADERS += \
-    cosignuppage.h \
+    co_dashboard.h \
+    co_signuppage.h \
     dbmanager.h \
-    drsignuppage.h \
+    dr_dashboard.h \
+    dr_signuppage.h \
     inputcheck.h \
     mainwindow.h \
-    tcsignuppage.h
+    tc_dashboard.h \
+    tc_signuppage.h
 
 FORMS += \
-    cosignuppage.ui \
-    drsignuppage.ui \
+    co_dashboard.ui \
+    co_signuppage.ui \
+    dr_dashboard.ui \
+    dr_signuppage.ui \
     mainwindow.ui \
-    tcsignuppage.ui
+    tc_dashboard.ui \
+    tc_signuppage.ui
+
+LIBS = -lpaho-mqtt3as \
+     -lpaho-mqttpp3
+
+RESOURCES += \
+    rsc.qrc
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-RESOURCES += \
-    rsc.qrc
+

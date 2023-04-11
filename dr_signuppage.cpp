@@ -1,4 +1,4 @@
-#include "drsignuppage.h"
+#include "dr_signuppage.h"
 #include "ui_drsignuppage.h"
 
 DRsignuppage::DRsignuppage(QWidget *parent) :

@@ -1,4 +1,4 @@
-#include "cosignuppage.h"
+#include "co_signuppage.h"
 #include "ui_cosignuppage.h"
 
 COsignupPage::COsignupPage(QWidget *parent) :
@@ -23,18 +23,12 @@ COsignupPage::info COsignupPage::createInfo(QLineEdit* usrnm, QLineEdit* eml, QL
 
     info newInfo{username, email, password, address, mobile};
 
-    qDebug() << "Username: " << newInfo.username;
-    qDebug() << "Email: " << newInfo.email;
-    qDebug() << "Password: " << newInfo.password;
-    qDebug() << "Address: " << newInfo.address;
-    qDebug() << "Mobile: " << newInfo.mobile;
-
     return newInfo;
 }
 
 void COsignupPage::on_submitBtn_clicked()
 {
-    extern COsignupPage::info newUser = createInfo(ui->usernameField, ui->emailField, ui->passwordField, ui->adressField, ui->mobileField);
+    COsignupPage::info newUser = createInfo(ui->usernameField, ui->emailField, ui->passwordField, ui->adressField, ui->mobileField);
 
 
 }

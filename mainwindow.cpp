@@ -39,7 +39,7 @@ void MainWindow::on_signupBtn_clicked()
     DRsignuppage page2;
     TCsignupPage page3;
 
-    qDebug() << "Page shows : " << x << Qt::endl; //Debug Success
+    qDebug() << "Page shows : " << x; //Debug Success
 
     if (x == "Cargo Owner"){
         //Display CO Sign Up Dialog

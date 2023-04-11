@@ -1,4 +1,4 @@
-#include "tcsignuppage.h"
+#include "tc_signuppage.h"
 #include "ui_tcsignuppage.h"
 
 TCsignupPage::TCsignupPage(QWidget *parent) :

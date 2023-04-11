@@ -333,7 +333,7 @@
     </property>
    </widget>
   </widget>
-  <widget class="QGroupBox" name="groupBox_3">
+  <widget class="QGroupBox" name="NotificationPlace">
    <property name="geometry">
     <rect>
      <x>20</x>

@@ -1,4 +1,4 @@
-QT       += core gui sql
+QT       += core gui sql mqtt
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,34 +10,49 @@ CONFIG += c++17
 
 SOURCES += \
     co_dashboard.cpp \
+    co_invoice.cpp \
+    co_profileview.cpp \
     co_signuppage.cpp \
     dbmanager.cpp \
     dr_dashboard.cpp \
+    dr_deliverystatuts.cpp \
+    dr_profileview.cpp \
     dr_signuppage.cpp \
     inputcheck.cpp \
     main.cpp \
     mainwindow.cpp \
     tc_dashboard.cpp \
+    tc_finddriver.cpp \
     tc_signuppage.cpp
 
 HEADERS += \
     co_dashboard.h \
+    co_invoice.h \
+    co_profileview.h \
     co_signuppage.h \
     dbmanager.h \
     dr_dashboard.h \
+    dr_deliverystatuts.h \
+    dr_profileview.h \
     dr_signuppage.h \
     inputcheck.h \
     mainwindow.h \
     tc_dashboard.h \
+    tc_finddriver.h \
     tc_signuppage.h
 
 FORMS += \
     co_dashboard.ui \
+    co_invoice.ui \
+    co_profileview.ui \
     co_signuppage.ui \
     dr_dashboard.ui \
+    dr_deliverystatuts.ui \
+    dr_profileview.ui \
     dr_signuppage.ui \
     mainwindow.ui \
     tc_dashboard.ui \
+    tc_finddriver.ui \
     tc_signuppage.ui
 
 LIBS = -lpaho-mqtt3as \

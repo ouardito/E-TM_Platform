@@ -1,4 +1,4 @@
-#include "invoice.h"
+#include "co_invoice.h"
 #include "ui_invoice.h"
 
 invoice::invoice(QWidget *parent) :
